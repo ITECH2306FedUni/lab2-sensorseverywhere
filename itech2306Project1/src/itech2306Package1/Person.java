@@ -9,6 +9,7 @@ package itech2306Package1;
  */
 public class Person {
 	String name;
+	String address;
 	/**
 	 * @return the name
 	 */
@@ -33,12 +34,12 @@ public class Person {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	String address;
+	
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Person p = new Person();
 
 	}
 
