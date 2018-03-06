@@ -10,6 +10,8 @@ package itech2306Package1;
 public class Person {
 	String name;
 	String address;
+	String postcode;
+	Animal pet;
 	/**
 	 * @return the name
 	 */
@@ -33,6 +35,19 @@ public class Person {
 	 */
 	public void setAddress(String address) {
 		this.address = address;
+	}
+	
+	/**
+	 * @return the postcode
+	 */
+	public String getPostcode() {
+		return postcode;
+	}
+	/**
+	 * @param postcode
+	 */
+	public void setPostcode(String postcode) {
+		this.postcode = postcode;
 	}
 	
 	/**
