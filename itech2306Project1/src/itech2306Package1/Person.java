@@ -50,16 +50,6 @@ public class Person {
 		this.postcode = postcode;
 	}
 	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		Person p = new Person("80 Somewhere St", "Fluffy", "3000");
-		Animal myPet = new Animal("Fluffy", false);
-		p.addAPet(myPet);
-		
-	}
-	
 	public Person(String _address, String _name, String _postcode) {
 		super();
 		this.name = _name;
@@ -70,6 +60,23 @@ public class Person {
 	void addAPet(Animal _pet) {
 		this.pet = _pet;
 	}
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Person p = new Person("80 Somewhere St", "Joe", "3000");
+		Animal myPet = new Animal("Fluffy", false);
+		p.addAPet(myPet);
+		System.out.println("results: " + p.toString());
+	}
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", address=" + address + ", postcode=" + postcode + "]";
+	}
+
+	
+
 	
 	
 
