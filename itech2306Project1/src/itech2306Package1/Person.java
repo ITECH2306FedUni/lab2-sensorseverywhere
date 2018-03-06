@@ -54,8 +54,23 @@ public class Person {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Person p = new Person();
-
+		Person p = new Person("80 Somewhere St", "Fluffy", "3000");
+		Animal myPet = new Animal("Fluffy", false);
+		p.addAPet(myPet);
+		
 	}
+	
+	public Person(String _address, String _name, String _postcode) {
+		super();
+		this.name = _name;
+		this.address = _address;
+		this.postcode = _postcode;
+	}
+	
+	void addAPet(Animal _pet) {
+		this.pet = _pet;
+	}
+	
+	
 
 }
